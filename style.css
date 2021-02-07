@@ -8,18 +8,12 @@ div#banner{
     height: 300px;
     background-size: cover;
     background-repeat: no-repeat;
-
-}
-div .article_container{
-    margin-top: 20px;
-    margin-left: 20px;
-}
-img .img_article{
-    width: 150px;
-    height: 150px;
 }
 h1{
     font-size: 20pt;
+}
+header{
+    background-color: #b11fc7;
 }
 header ul{
     width: 100%;
@@ -31,26 +25,51 @@ header ul li{
     display: inline-block;
     margin: 10px;
 }
+header ul li a{
+    padding:2.5px;
+    text-decoration: none;
+    color:white;
+}
+header ul li a:hover{
+    background-color: #a2aba2;
+    color: black;
+    border-radius: 4px;
+}
 section{
     margin-top: 60px;
-    margin-left:10%;
+    margin-left: 10%;
     width: 80%;
 }
 div .article_text{
     margin-left: 20px;
     float:right;
-    width: 300px;
+    width: 250px;
+}
+div .article_text p{
+    margin-top: 20px;
+}
+.article_date{
+    font-size: 12px;
 }
 div#container_session{
     padding: 5px;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
     height: 100%;
     background-color: #a2aba2;
 }
-@media only screen and (max-width:350px){
+@media only screen and (min-width:320px){
+    div#container_session{
+        padding: 5px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        background-color: #a2aba2;
+    }
     div#banner{
         background-image: url('imagens/banner1_300x300.jpg');
         width: 100%;
@@ -59,20 +78,52 @@ div#container_session{
         background-repeat: no-repeat;
     
     }
-    img .img_article{
-        margin-top: 25px;
-        margin-left: 50px;    
-        width: 100px;
-        height: 100px;
+    .img_article{
+        margin-left: 5px;
+        margin-top: 20px;
+    }
+
+}
+@media only screen and (min-width:425px){
+    .img_article{
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    div .article_text{
+        margin-left: 20px;
+        float:right;
+        width: 250px;
     }
 }
 @media only screen and (min-width:1000px){
+    header ul{
+        width: 85%;
+        display:flex;
+        justify-content: left;
+        margin-left: 150px;
+        background-color:#b11fc7 ;
+    }
+    div#container_session{
+        padding: 5px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        height: 100%;
+        background-color: #a2aba2;
+    }
     div#banner{
-        background-image: url('imagens/banner1_1000x300.jpg');
+        background-image: url('imagens/banner1_1000x400.jpg');
         width: 100%;
         height: 350px;
         background-size: cover;
         background-repeat: no-repeat;
     
+    }
+    div .article_text{
+        margin-top: 15px;
+        margin-left: 20px;
+        float:right;
+        width: 250px;
     }
 }
