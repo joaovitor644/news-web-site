@@ -10,8 +10,11 @@ div#banner{
     background-repeat: no-repeat;
 
 }
-img#img_article{
-    float: left;
+div .article_container{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+img .img_article{
     width: 150px;
     height: 150px;
 }
@@ -33,9 +36,10 @@ section{
     margin-left:10%;
     width: 80%;
 }
-div#article_text{
-    float: right;
-    margin-left: 25px;
+div .article_text{
+    margin-left: 20px;
+    float:right;
+    width: 300px;
 }
 div#container_session{
     padding: 5px;
@@ -51,6 +55,22 @@ div#container_session{
         background-image: url('imagens/banner1_300x300.jpg');
         width: 100%;
         height: 300px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+    }
+    img .img_article{
+        margin-top: 25px;
+        margin-left: 50px;    
+        width: 100px;
+        height: 100px;
+    }
+}
+@media only screen and (min-width:1000px){
+    div#banner{
+        background-image: url('imagens/banner1_1000x300.jpg');
+        width: 100%;
+        height: 350px;
         background-size: cover;
         background-repeat: no-repeat;
     
