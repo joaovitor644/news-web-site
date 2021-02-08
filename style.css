@@ -9,8 +9,11 @@ div#banner{
     background-size: cover;
     background-repeat: no-repeat;
 }
-h1{
+.article_text a {
     font-size: 20pt;
+    text-decoration: none;
+    color:black;
+
 }
 header{
     background-color: #b11fc7;
@@ -126,4 +129,8 @@ div#container_session{
         float:right;
         width: 250px;
     }
+    div .article_text2 p{
+        margin-top: 15px;
+    }
+
 }
