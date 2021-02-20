@@ -87,14 +87,16 @@ div#container_session{
     }
 
 }
-@media only screen and (min-width:425px){
+@media only screen and (max-width:425px){
     .img_article{
         margin-left: 20px;
+          display: flex;
+        align-items: center;
+        justify-content: center;
         margin-top: 20px;
     }
     div .article_text{
         margin-left: 20px;
-        float:right;
         width: 250px;
     }
 }
