@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-widht,initial-scale=1">
+		<title>Tela de Login</title>
+		<link rel="stylesheet" href="style/style.css">
+	</head>
+	<body>
+		<div id="container-box">
+			<div id="box-login">
+				<form method="POST" action="#">
+					<span>Email</span>
+					<img src='style/user.svg' id="user">
+					<input type="email" placeholder="example@example.com" name="email" id="email">
+					<span>Passworld</span>
+					<input type="password" placeholder="********" name="passwd" id="passwd">
+					<span class="status" id="status"></span>
+					<img src='style/locked.svg' id="locker">
+					<input type="button" value="Sign Up" id="btm" onclick="aut(1)"> 
+					<p><a href="index.html" class="sign_in" style="margin-left: 60px;">Logar-se</a></p>
+				</form>
+			</div>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>

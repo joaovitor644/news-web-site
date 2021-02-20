@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-widht,initial-scale=1">
+		<title>Tela de Login</title>
+		<link rel="stylesheet" href="style/style.css">
+	</head>
+	<body>
+		<div id="container-box">
+			<div id="box-login">
+				<form method="POST" action="server_file.php">
+					<span>Email</span>
+					<img src='style/user.svg' id="user">
+					<input type="email" placeholder="example@example.com" name="email" id="email">
+					<span>Passworld</span>
+					<input type="password" placeholder="********" name="passwd" id="passwd">
+					<span class="status" id="status"></span>
+					<img src='style/locked.svg' id="locker">
+					<input type="button" value="Sign Up" id="btm" onclick="aub(1)"> 
+					<p><a href="login.html" class="sign_in" style="margin-left: 60px;">Cadastrar-se</a></p>
+				</form>
+			</div>
+		</div>
+		<script>
+			function aub(op){
+				  var xhttp = new XMLHttpRequest();
+
+				  	let eml = document.getElementById("email").value;
+				    let pwd = document.getElementById("passwd").value;
+				    let btm = document.getElementById("btm");
+				    let vl =  document.getElementById("status").value;
+
+				    xhttp.onreadystatechange = function() {
+				        if(this.readyState == 4 && this.status == 200){
+				            if(this.responseText == "negado"){
+				            	btm.setAttribute("type",'button');
+				            	document.getElementById("status").innerHTML = this.responseText;
+				            }
+				            else if(this.responseText == "confirmado"){
+				            	document.getElementById("status").innerHTML = '';
+				            	btm.setAttribute("type",'submit');
+				            }
+				        }
+				      
+				    }; 
+				    
+
+				    xhttp.open("POST",'server_file.php?e='+eml+'&p='+pwd+'&o='+op,true);
+				  	xhttp.send();
+			}
+		</script>	
+	</body>
+</html>
