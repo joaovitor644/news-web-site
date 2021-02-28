@@ -1,0 +1,27 @@
+#container_session2{
+	width: 90%;
+	height: auto;
+	background-color:grey;
+	margin: auto;
+	padding: 20px;
+	border-radius: 5px;
+}
+h1{
+	text-align: center;
+	margin-bottom: 30px;
+}
+#container_session2 img{
+	margin: auto;
+	width: 300px;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+#container_session2 p{
+	margin-bottom: 100px;
+}
+article{
+	margin: auto;
+}
