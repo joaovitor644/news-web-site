@@ -85,6 +85,10 @@ div#container_session{
         margin-left: 5px;
         margin-top: 20px;
     }
+    .article_text {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 
 }
 @media only screen and (max-width:425px){
