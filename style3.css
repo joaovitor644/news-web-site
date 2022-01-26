@@ -1,7 +1,9 @@
 #container_session2{
 	width: 90%;
 	height: auto;
-	background-color:grey;
+	display:flex;
+	flex-direction:column;
+	background-color:white;
 	margin: auto;
 	padding: 20px;
 	border-radius: 5px;
@@ -14,9 +16,6 @@ h1{
 	margin: auto;
 	width: 300px;
 	height: 300px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	margin-bottom: 20px;
 }
 #container_session2 p{
@@ -24,5 +23,11 @@ h1{
 }
 article{
 	margin: auto;
+}
+@media screen and (max-width:380px){
+	#container_session2 img{
+		width:200px;
+		height:200px;
+	}
 }
 

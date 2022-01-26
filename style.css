@@ -4,16 +4,16 @@
 body{
   background:#ddd;
   margin:0;
+  font-family:sans-serif;
 }
 main{
   margin:auto;
   background:white;
   display:grid;
-  order:3;
   width:90%;
   margin-top:50px;
   padding:20px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr ;
   margin-bottom:50px;
   
 }
@@ -31,16 +31,18 @@ nav > a{
   color:white;
   transition:0.3s;
 }
+header{
+  background:#aa00aa;
+}
+header > label{
+  display:none;
+}
 nav > a:hover{
   background:white;
   color:black;
   border-radius:3px;
 }
 @media only screen and (max-width: 420px){
-  nav{
-    flex-direction:column;
-    justify-content:center; 
-  }
   nav > a {
     display:flex;
     justify-content:center;
@@ -48,36 +50,73 @@ nav > a:hover{
   #logo_nav{
     display:none;
   }
-  article{
+  .article-grid{
   	justify-content:center;
   }
 }
 @media only screen and (max-width:600px){
   nav{
-    justify-content:center;
+    display:none;
+    transition:0.8s;
   }
   #logo_nav{
     display:none;
   }
-  article{
+  .article-grid{
     display:inline;
     margin:auto;
   }
+
+  header{
+	  display: flex;
+	  justify-content: left;
+	  padding: 10px 30px 10px 30px;
+  }
+  header > label{
+    display:inline-block;
+    z-index:1;
+  }
+  #check:checked ~ nav{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    margin:auto;
+    transition:0.8s;
+  }
+
   
+}
+#load-news{
+	background:#aa00aa;
+	border-radius:4px;
+	margin:auto;
+	color:white;
+	border:none;
+	margin-bottom:30px;
+	width:60%;
+	padding:15px;
+}
+#load-news:hover{
+	background:gray;
+	cursor:pointer;
+}
+div#but-news{
+	margin:auto;
+	display:flex;
 }
   @media only screen and (max-width:1200px){
   main{
     display:flex;
     flex-direction:column;
   }
-  article{
+  .article-grid{
   	flex-direction:nowrap;
   }
   .text-article{
   	margin-left:10px;
   }
 }
-article{
+.article-grid{
   margin-top:20px;
   padding:20px;
   
@@ -91,4 +130,20 @@ article{
 .text-article p{
   margin-top:10px;
 }
+.text-article a{
+	text-decoration:none;
+	color:black;
+}
+.text-article a:hover {
+	text-decoration:underline;
+}
 
+/*Titulo-artigo.html*/
+
+.title-main{
+	font-size:50px;
+}
+.container-content{
+	width:90%;
+	margin:auto;
+}
