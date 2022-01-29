@@ -7,10 +7,11 @@
 	margin: auto;
 	padding: 20px;
 	border-radius: 5px;
+	margin-top: 150px;
 }
 h1{
 	text-align: center;
-	margin-bottom: 30px;
+	margin: 0;
 }
 #container_session2 img{
 	margin: auto;
