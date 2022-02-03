@@ -232,3 +232,27 @@ input{
     height: 200px;
   }
 }
+/*community_page/community.html */
+.community_card{
+  padding: 20px;
+  margin-top: 50px;
+  color: black;
+}
+.community_card:hover{
+  background-color: #aa00aa;
+  color: white;
+}
+a.anco-community-card{
+  text-decoration: none;
+}
+.comentary_area{
+  background-color: gray;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+.comentary_card{
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 50px;
+  color: black;
+}
