@@ -8,7 +8,7 @@
 	padding: 20px;
 	border-radius: 5px;
 	margin-top: 150px;
-	margin-bottom: 150px;
+	margin-bottom: 50px;
 }
 h1{
 	text-align: center;
@@ -20,7 +20,7 @@ h1{
 	height: 300px;
 	margin-bottom: 20px;
 }
-#container_session2 p{
+#container_session2 p.aboutP{
 	margin-bottom: 100px;
 }
 article{
@@ -31,5 +31,8 @@ article{
 		width:200px;
 		height:200px;
 	}
+}
+#container_session2 a{
+	text-decoration: none;
 }
 
