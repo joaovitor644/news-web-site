@@ -4,9 +4,9 @@
   "description": "Uma simples página web de notícias",
   "main": "src/server.ts",
   "scripts": {
-    "dev": "sucrase-node src/server.ts",
+    "dev": "sucrase-node app/server.ts",
     "build": "sucrase src/ -d ./dist --transforms typescript,imports",
-    "start": "node ./dist/server.js"
+    "start": "node ./dist/app/server.js"
   },
   "repository": {
     "type": "git",
