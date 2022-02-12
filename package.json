@@ -5,7 +5,7 @@
   "main": "src/server.ts",
   "scripts": {
     "dev": "sucrase-node app/server.ts",
-    "build": "sucrase app/ -d ./dist --transforms typescript,imports",
+    "build": "sucrase ./ -d ./dist --transforms typescript,imports",
     "start": "node ./dist/app/server.js"
   },
   "repository": {
