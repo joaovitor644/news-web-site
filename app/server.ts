@@ -1,13 +1,9 @@
 import express from 'express';
 import path from 'path'
-import consolreload from './tools/consoleUpdate';
-import Logger from "./tools/Logger"
-import { mainControler , Data } from './controllers/main'
+import { mainControler } from './controllers/main'
 
-const createLog = Logger.createLog
-const Log = new Logger.Logger
 const app = express()
-const port = process.env.PORT
+const port = process.env.PORT || 3000
 
 app.set('views','app/views')
 app.set("view engine", "ejs")
