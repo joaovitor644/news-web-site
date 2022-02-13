@@ -17,7 +17,4 @@ app.use('/', mainControler.index);
 app.use('/404', mainControler.status404);
 
 
-app.listen(3000, () => {
-    //consolreload(port,Data);
-    createLog(Log.info("Server Rodando"),"app/log/server.log")
-})
+app.listen(3000)
