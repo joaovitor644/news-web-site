@@ -5,7 +5,7 @@
   "main": "src/server.ts",
   "scripts": {
     "dev": "sucrase-node app/server.ts",
-    "build": "sucrase ./app -d ./dist --transforms typescript,imports && cp -r ./app/public/* ./dist/public/ && cp  ./app/views/components/* -r ./dist/views/components/ && cp -r ./app/views/* ./dist/views/ && node ./dist/server.js",
+    "build": "sucrase ./app -d ./dist --transforms typescript,imports && cp -r ./app/public/* ./dist/public/ && cp  ./app/views/components/* -r ./dist/views/components/ && cp -r ./app/views/* ./dist/views/ ",
     "start": "node ./dist/server.js"
   },
   "repository": {
