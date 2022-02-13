@@ -5,8 +5,8 @@
   "main": "src/server.ts",
   "scripts": {
     "dev": "sucrase-node app/server.ts",
-    "build": "sucrase ./ -d ./dist --transforms typescript,imports",
-    "start": "node ./dist/app/server.js"
+    "build": "sucrase ./app -d ./dist --transforms typescript,imports && cp -r ./app/public/* ./dist/public/ && cp  ./app/views/components/* -r ./dist/views/components/ && cp -r ./app/views/* ./dist/views/ && node ./dist/server.js",
+    "start": "node ./dist/server.js"
   },
   "repository": {
     "type": "git",
