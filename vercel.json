@@ -1,15 +1,5 @@
 {
-	"version": 2,
-	"builds": [
-		{
-			"src": "./server.js",
-			"use": "@vercel/node"
-		}
-	],
-	"routes": [
-		{
-			"src": "/(.*)",
-			"dest": "/"
-		}
-	]
+	"scripts":{
+		"build": "sucrase ./app -d ./dist --transforms typescript,imports && cp -r ./app/public/* ./dist/public/ && cp  ./app/views/components/* -r ./dist/views/components/ && cp -r ./app/views/* ./dist/views/ && node ./dist/server.js",
+	}
 }
