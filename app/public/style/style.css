@@ -133,7 +133,7 @@ nav > a:hover{
 	color:white;
 	border:none;
 	margin-bottom:30px;
-	width:60%;
+	width:600px;
 	padding:15px;
 }
 #load-news:hover{
@@ -159,7 +159,6 @@ div#but-news{
 .article-grid{
   margin-top:20px;
   padding:20px;
-  
   display:flex;
   flex-wrap:wrap;
   flex-direction:row;
