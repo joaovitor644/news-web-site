@@ -10,6 +10,7 @@ app.set("view engine", "ejs")
 app.use(express.static(path.join(__dirname,"public")));
 
 app.use('/', mainControler.index);
+app.use('/about',mainControler.about);
 app.use('/404', mainControler.status404);
 
 
